@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="icon/png" href="assets/img/LogoEESTN1.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/LogoEESTN1.png" alt="LogoEESTN1">
+        </div>
+        <button class="btn-theme">
+            Cambiar tema
+        </button>
+        <p>Galería de Imágenes</p>
+        <audio controls src="assets/audio/song.mp3"></audio>
+    </header>
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="assets/img/img1.jpg" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img src="assets/img/img2.png" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img src="assets/img/img3.jpg" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <img src="assets/img/img4.jpg" alt="Imagen 4">
+            </div>
+            <div class="slide">
+                <img src="assets/img/img5.jpg" alt="Imagen 5">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn prev-btn">&lt;</button>
+            <button class="nav-btn next-btn">&gt;</button>
+        </div>
+    </div>
+
+    <div class="thumbnail-gallery" id="thumbnails">
+        <div class="thumbnail active">
+            <img src="assets/img/img1.jpg" alt="Miniatura 1">
+        </div>
+        <div class="thumbnail">
+            <img src="assets/img/img2.png" alt="Miniatura 2">
+        </div>
+        <div class="thumbnail">
+            <img src="assets/img/img3.jpg" alt="Miniatura 3">
+        </div>
+        <div class="thumbnail">
+            <img src="assets/img/img4.jpg" alt="Miniatura 4">
+        </div>
+        <div class="thumbnail">
+            <img src="assets/img/img5.jpg" alt="Imagen 5">
+        </div>
+    </div>
+
+    <div class="fullscreen-overlay" id="fullscreen-overlay">
+        <button class="close-btn" id="close-fullscreen">&times;</button>
+        <img class="fullscreen-image" id="fullscreen-image" src="" alt="Imagen en pantalla completa">
+        <div class="fullscreen-navigation">
+            <button class="fullscreen-nav-btn prev-fullscreen-btn">&lt;</button>
+            <button class="fullscreen-nav-btn next-fullscreen-btn">&gt;</button>
+        </div>
+    </div>
+
+    <script src="js/script.js "></script>
+</body>
+</html>
